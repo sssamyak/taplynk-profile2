@@ -1,123 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samyak Sonwane - TapLynk</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Samyak Sonwane | Taplynk</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Social Icons (FontAwesome) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <style>
+<style>
     body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top, #1a1a1a, #000000);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: #0a0a0a;
+        color: #fff;
+        text-align: center;
     }
 
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 40px;
-      border-radius: 25px;
-      width: 90%;
-      max-width: 420px;
-      text-align: center;
-      border: 1px solid rgba(255, 215, 0, 0.4);
-      backdrop-filter: blur(12px);
-      animation: fadeIn 1.5s ease;
-      box-shadow: 0px 0px 40px rgba(255, 215, 0, 0.15);
+    .container {
+        max-width: 420px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #111;
+        border-radius: 20px;
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.15);
+        border: 1px solid rgba(255,255,255,0.05);
+        animation: fadeIn 1.2s ease;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
     }
 
-    .name {
-      font-size: 2.3rem;
-      font-weight: 600;
-      color: #ffd700;
-      text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    .profile-img {
+        width: 130px;
+        height: 130px;
+        margin: auto;
+        border-radius: 50%;
+        border: 3px solid #d4af37;
+        background: url('https://i.imgur.com/5ZQZ12P.png') center/cover; /* Placeholder image */
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
     }
 
-    .role {
-      font-size: 1.2rem;
-      margin-top: 8px;
-      opacity: 0.9;
+    h1 {
+        margin-top: 18px;
+        font-size: 26px;
+        font-weight: 600;
+        color: #ffd778;
     }
 
-    .brand {
-      margin-top: 10px;
-      font-size: 1rem;
-      color: #e5c76b;
-      letter-spacing: 1px;
-      font-weight: 300;
+    h3 {
+        margin-top: -8px;
+        font-weight: 400;
+        color: #ccc;
     }
 
-    .social {
-      margin-top: 25px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
+    .social-links {
+        margin: 25px 0;
+        display: flex;
+        justify-content: center;
+        gap: 18px;
     }
 
-    .social a {
-      color: #ffd700;
-      font-size: 1.6rem;
-      transition: 0.3s;
+    .social-links a {
+        color: #ffd778;
+        font-size: 22px;
+        transition: 0.2s;
     }
 
-    .social a:hover {
-      transform: scale(1.2);
-      color: white;
-      text-shadow: 0 0 10px gold;
+    .social-links a:hover {
+        color: #fff;
+        transform: scale(1.2);
     }
 
-    .vcard-btn {
-      margin-top: 35px;
-      display: inline-block;
-      padding: 12px 22px;
-      border-radius: 12px;
-      border: 1px solid gold;
-      color: gold;
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: 500;
-      transition: 0.3s;
+    .btn {
+        display: block;
+        margin: 15px auto;
+        padding: 12px 18px;
+        width: 80%;
+        background: linear-gradient(135deg, #d4af37, #f8e89a);
+        color: #000;
+        text-decoration: none;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: 0.2s;
     }
 
-    .vcard-btn:hover {
-      background: gold;
-      color: black;
-      box-shadow: 0 0 12px gold;
+    .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
     }
-  </style>
+
+    .footer {
+        margin-top: 25px;
+        font-size: 13px;
+        color: #aaa;
+    }
+</style>
 </head>
 
 <body>
-  <div class="card">
-    <div class="name">Samyak Sonwane</div>
-    <div class="role">Founder, TapLynk</div>
-    <div class="brand">Premium Gold Profile</div>
 
-    <div class="social">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-x-twitter"></i></a>
-      <a href="#"><i class="fas fa-globe"></i></a>
+<div class="container">
+    
+    <div class="profile-img"></div>
+
+    <h1>Samyak Sonwane</h1>
+    <h3>Founder, TapLynk</h3>
+
+    <div class="social-links">
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="tel:+91XXXXXXXXXX"><i class="fa fa-phone"></i></a>
+        <a href="mailto:email@example.com"><i class="fa fa-envelope"></i></a>
     </div>
 
-    <!-- vCard Download Button -->
-    <a class="vcard-btn" href="samyak.vcf" download>Download vCard</a>
+    <a class="btn" href="YOUR-VCARD.vcf" download>Download vCard</a>
 
-  </div>
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX">WhatsApp</a>
+
+    <a class="btn" href="#">Visit Website</a>
+
+    <div class="footer">
+        Powered by Taplynk
+    </div>
+
+</div>
+
 </body>
 </html>
